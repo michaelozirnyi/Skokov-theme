@@ -1,0 +1,39 @@
+.header {
+  vertical-align: middle;
+
+  .logo {
+    width: 115px;
+    height: 115px;
+    margin: 22px 120px;
+  }
+
+  /*--- Nav ---*/
+  ul {
+    margin-right: 80px;
+  }
+
+  li {
+  margin: 0 30px;
+
+    a {
+      position: relative;
+      padding: 27px 10px 30px;
+      color: $black;
+
+      &:hover{
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+/*-------@media--------*/
+@media (max-width: 768px) {
+
+
+}
+
+/*-------@media--------*/
+@media (max-width: 576px) {
+
+}

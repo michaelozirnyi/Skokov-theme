@@ -1,0 +1,36 @@
+{
+  "name": "Skokov-theme",
+  
+"homepage": "https://github.com/michaelozirnyi/Skokov-theme",
+  
+"authors": [
+    "Mykhailo <mykhailoozirnyi@gmail.com>"
+  ],
+  
+"description": "",
+  
+"main": "",
+  
+"license": "MIT",
+  
+"private": true,
+  
+"ignore": [
+    "**/.*",
+    
+	"node_modules",
+    
+	"bower_components",
+    
+	"test",
+    
+	"tests"
+  ],
+  
+"dependencies": {
+   
+	 "bootstrap": "v4.0.0-alpha.6",
+    
+	 "font-awesome": "fontawesome#^4.7.0"
+  }
+}

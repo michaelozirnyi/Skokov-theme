@@ -1,0 +1,48 @@
+.text {
+
+  &-white {
+    color: $white;
+  }
+
+  &-gray {
+    color: $gray;
+  }
+  
+  &-yellow {
+    color: $yellow;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.flexes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.just-c-center {
+  justify-content: center;
+}
+
+.just-c-sp-bt {
+  justify-content: space-between;
+}
+
+/*
+.just-c-sp-ar {
+  justify-content: space-around;
+}*/
