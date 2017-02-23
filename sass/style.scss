@@ -26,6 +26,14 @@ h3 {
   font: 900 24px/34px $lato;
 }
 
+h6 {
+  font-family: "Century Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 35px;
+}
+
 p {
   font: 400 18px/32px $lato;
 }
@@ -71,7 +79,7 @@ p {
 
 /*--------  Posts in blog section --------*/
 .posts-blog {
-  width: 72% ;
+  width: 70% ;
   margin: 80px 0;
   height: 900px;
   background-color: #888;
@@ -79,17 +87,18 @@ p {
 
 /*--------  Widgets section ---------*/
 .widgets {
-  background-color: lightgreen;
-  width: 28%;
+  width: 30%;
+  min-width: 369px !important;
   margin: 80px 0;
   right: 0;
 
   .widget {
     background-color: $gray;
-    padding: 35px;
+    padding: 35px 15px 35px 35px;
     margin-bottom: 30px;
   }
 
+  /*--  Search widget  --*/
   .search {
     position: relative;
     height: 70px;
@@ -108,17 +117,135 @@ p {
 
     button {
       position: absolute;
+      top: 25px;
+      right: 40px;
       z-index: 5;
-      top: 21px;
-      right: 70px;
       color: $text-gray;
       border: none;
       background-color: transparent;
       height: 30px;
       font-size: 19px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  /*--  Categories widget  --*/
+  .categories {
+
+    ul {
+      list-style: none;
+      column-count:2;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 15px;
+
+        a {
+          color: $white;
+          vertical-align: middle;
+          font-size: 16px;
+
+          i {
+            width: 31px;
+            height: 31px;
+            background-color: $yellow;
+            margin-right: 15px;
+            color: $gray;
+            font-size: 30px;
+            text-align: center;
+          }
+
+          &:hover {
+            color: $orange;
+            
+            i {
+              color: $lightgray;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /*--  Archive widget  --*/
+  .archive {
+
+    @extend .categories;
+
+    .numbers-in-archive {
+      margin-left: 5px;
+    }
+  }
+
+  /*--  Popular posts widget  --*/
+.popul-posts {
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    .link-to-post:hover .title-post{
+      color: $orange;
+    }
+
+    img {
+      width: 100px;
+      height: 70px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .title-post {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      color: $white;
+    }
+
+    .pub-date-post {
+
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: right;
+      margin-right: 20px;
+    }
+  }
+}
+
+  /*--  Tags widget  --*/
+  .tag-links a{
+    display: inline-block;
+    margin-bottom: 3px;
+    padding: 3px 10px;
+    line-height: 25px;
+    color: $gray;
+    background-color: $yellow;
+    
+    &:hover {
+      color: $orange;
     }
   }
 
 
 
+
 }
+
+
+/*-------@media--------*/
+@media (max-width: 1366px) {
+
+  .widgets .widget {
+    padding: 25px 10px 25px 20px;
+    margin-bottom: 30px;
+  }
+
+}
+
+
