@@ -1,0 +1,192 @@
+/*--------=====   Posts in blog section   =====--------*/
+.posts-blog {
+  position: relative;
+  margin: 130px 0 70px;
+  width: 70% ;
+
+  .posts-list {
+    padding: 0;
+    margin-top: 50px;
+    list-style: none;
+
+    li {
+      margin-right: 30px;
+      margin-bottom: 30px;
+      width: calc(50% - 30px);
+      position: relative;
+
+      &:nth-child(2n+1) {
+        margin-top: 100px;
+      }
+    }
+  }
+
+  /*---   Slogan near posts   ---*/
+  .slogan {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    z-index: 5;
+    display: block;
+    background-color: $yellow;
+    padding: 10px 20px;
+    width: calc(50% - 30px);
+    height: 70px;
+
+    p {
+      font: 600 18px/25px $gothic;
+      margin-bottom: 0;
+    }
+
+    .autor-slog {
+      font: 600 11px $gothic;
+      position: relative;
+      display: block;
+      width: 100%;
+      text-align: end;
+      margin-top: -7px;
+    }
+  }
+}
+
+.post {
+  position: relative;
+  margin-top: -100px;
+  min-height: 650px;
+  width: 100%;
+  background-color: $yellow;
+
+  .post-img {
+    width: 100%;
+    height: calc(26vw - 23px);
+    overflow: hidden;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -11px;
+      right: 70px;
+      width: 23px;
+      height: 23px;
+      background-color: $yellow;
+      transform: rotate(45deg);
+    }
+
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+}
+
+.post-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  padding-bottom: auto;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+
+  .post-text {
+    color: $text-gray;
+    font: 400 14px/20px $gothic;
+    margin-bottom: 25px;
+  }
+
+  .post-likes {
+    color: $text-gray;
+    font: 400 12px/20px $gothic;
+    margin-bottom: 0;
+  }
+
+  .about-post {
+    color: $black;
+
+    @extend .post-likes;
+  }
+}
+
+/*-------=====   Pagination   =====-------*/
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px 0;
+
+  a {
+    font: 700 20px/21px $gothic;
+    color: $text-gray;
+    padding: 10px 15px;
+
+    &:hover {
+      color: $orange;
+      background-color: $yellow;
+    }
+  }
+
+  .prev-next {
+
+    i {
+      color: transparent;
+    }
+
+    &:hover i{
+      color: $black
+    }
+  }
+
+  .page-num {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+
+    li {
+      display: block;
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+
+
+    /*------=====   @media   =====--------*/
+
+/*-------@media--------*/
+@media (max-width: 1170px) {
+
+  .posts-blog .slogan{
+
+    p {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .autor-slog {
+      margin-top: 0;
+    }
+  }
+}
+
+/*-------@media--------*/
+@media (max-width: 1020px) {
+
+  .posts-blog .slogan{
+
+    p {
+      font-size: 13px;
+      line-height: 15px;
+    }
+
+    .autor-slog {
+      margin-top: 0;
+    }
+  }
+}
