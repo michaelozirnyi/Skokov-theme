@@ -4,7 +4,7 @@
 @import 'helper-classes';
 
 
-/*---  General style   ---*/
+/*-----=====  General style   =====-----*/
 html {
   background-color: $white;
 }
@@ -21,7 +21,6 @@ body {
 h2 {
   font: 900 60px/60px $gothic;
 }
-
 */
 
 h3 {
@@ -63,9 +62,9 @@ p {
 }
 
 
-      /*---  Start style  ---*/
+           /*---  Start style  ---*/
 
-/*---------- Head section -----------*/
+/*-------=====   Head section   =====--------*/
 .page-name {
   background: url(../images/slider-bg.png) no-repeat;
   margin: 0 -15px;
@@ -87,7 +86,7 @@ p {
   }
 }
 
-/*--------=====  Posts in blog section =====--------*/
+/*--------=====   Posts in blog section   =====--------*/
 .posts-blog {
   position: relative;
   margin: 130px 0 70px;
@@ -110,6 +109,7 @@ p {
     }
   }
 
+  /*---   Slogan near posts   ---*/
   .slogan {
     position: absolute;
     top: -50px;
@@ -202,7 +202,7 @@ p {
   }
 }
 
-/*-----===== Pagination =====-----*/
+/*-------=====   Pagination   =====-------*/
 .pagination {
   display: flex;
   justify-content: space-between;
@@ -243,8 +243,6 @@ p {
     }
   }
 }
-
-
 
 /*--------=====  Widgets section =====---------*/
 .widgets {
@@ -344,42 +342,41 @@ p {
   }
 
   /*--  Popular posts widget  --*/
-.popul-posts {
+  .popul-posts {
 
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
 
-    li {
-      min-height: 70px;
-      margin-bottom: 15px;
+      li {
+        min-height: 70px;
+        margin-bottom: 15px;
+      }
 
-    }
+      .link-to-post:hover .title-post{
+        color: $orange;
+      }
 
-    .link-to-post:hover .title-post{
-      color: $orange;
-    }
+      img {
+        width: 100px;
+        height: 70px;
+        float: left;
+        margin-right: 10px;
+      }
 
-    img {
-      width: 100px;
-      height: 70px;
-      float: left;
-      margin-right: 10px;
-    }
+      .title-post {
+        font: 400 16px/20px $gothic;
+        color: $white;
+      }
 
-    .title-post {
-      font: 400 16px/20px $gothic;
-      color: $white;
-    }
-
-    .pub-date-post {
-      font: 400 12px/20px $gothic;
-      text-align: right;
-      margin-right: 20px;
+      .pub-date-post {
+        font: 400 12px/20px $gothic;
+        text-align: right;
+        margin-right: 20px;
+      }
     }
   }
-}
 
   /*--  Tags widget  --*/
   .tag-links a{
@@ -396,7 +393,7 @@ p {
   }
 }
 
-
+          /*------=====   @media   =====--------*/
 
 /*-------@media--------*/
 @media (max-width: 1366px) {
@@ -415,7 +412,7 @@ p {
   }
 }
 
-
+/*-------@media--------*/
 @media (max-width: 1170px) {
 
   .posts-blog .slogan{
@@ -431,8 +428,7 @@ p {
   }
 }
 
-
-
+/*-------@media--------*/
 @media (max-width: 1020px) {
 
   .posts-blog .slogan{
@@ -447,4 +443,3 @@ p {
     }
   }
 }
-

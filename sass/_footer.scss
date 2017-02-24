@@ -1,4 +1,4 @@
-/*--------  Footer --------*/
+/*-----===  Footer style  ===-----*/
 .footer {
 
 
@@ -20,7 +20,6 @@
       padding-left: 0;
     }
 
-
       /*-----------*/
     .about {
       margin-bottom: 45px;
@@ -33,7 +32,6 @@
         color: $white;
         background-color: $black;
         font: 400 15px $gothic;
-
 
         &:hover {
           color: $orange;
@@ -101,19 +99,16 @@
     .contacts {
       margin-bottom: 50px;
 
-      li {
-        
-        i {
-          display: block;
-          width: 30px;
-          height: 30px;
-          margin-right: 20px;
-          color: $white;
-          background-color: $black;
-          text-align: center;
-          font-size: 17px;
-          line-height: 28px;
-        }
+      li i {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        color: $white;
+        background-color: $black;
+        text-align: center;
+        font-size: 17px;
+        line-height: 28px;
       }
     }
 
@@ -191,6 +186,9 @@
   }
 }
 
+
+
+
 /*-------@media--------*/
 @media (max-width: 991px) {
 
@@ -200,6 +198,4 @@
 /*-------@media--------*/
 @media (max-width: 768px) {
 
-
 }
-
