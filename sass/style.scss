@@ -5,6 +5,7 @@
 
 @import 'blog';
 @import 'widgets-section';
+@import 'single-post';
 
 
 /*-----=====  General style   =====-----*/
@@ -20,14 +21,15 @@ body {
 /*h1 {
   font: 900 72px/80px $gothic;
 }
-
-h2 {
-  font: 900 60px/60px $gothic;
-}
 */
 
-h3 {
+h2 {
   font: 400 35px/21px $gothic;
+}
+
+
+h3 {
+  font: 400 30px/30px $gothic;
 }
 
 h4 {
