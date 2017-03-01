@@ -1,6 +1,7 @@
 /*-----===  Header style  ===-----*/
 .header {
   vertical-align: middle;
+  position: relative;
 
   .logo {
     width: 115px;
@@ -28,6 +29,21 @@
   }
 }
 
+
+/*===========================*/
+.created-by {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #999;
+  font-size: 13px;
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+/*===========================*/
 
 /*-------@media--------*/
 @media (max-width: 768px) {
